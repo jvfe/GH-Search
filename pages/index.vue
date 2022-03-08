@@ -1,9 +1,9 @@
 <template>
-  <Tutorial />
+  <SearchPage />
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'GithubSearch',
 }
 </script>
