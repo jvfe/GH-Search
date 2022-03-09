@@ -1,16 +1,19 @@
 <template>
   <div>
     <h1>Hi from search!</h1>
-    <h1>{{ user }}</h1>
+    <pre>{{ userData }}</pre>
   </div>
 </template>
 
 <script>
+import getGitHubData from '@/lib/getData.js'
+
 export default {
   name: 'UserPage',
-  asyncData({ params }) {
+  async asyncData({ params }) {
+    const dataset = await getGitHubData(params.user)
     return {
-      user: params.user,
+      userData: dataset,
     }
   },
 }
