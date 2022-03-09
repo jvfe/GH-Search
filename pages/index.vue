@@ -1,5 +1,5 @@
 <template>
-  <SearchPage />
+  <IndexPage />
 </template>
 
 <script>

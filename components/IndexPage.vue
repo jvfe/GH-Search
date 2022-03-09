@@ -43,8 +43,7 @@ export default {
   },
   methods: {
     submitUsername() {
-      console.log('submitted!')
-      return ''
+      window.$nuxt.$router.push(`/search/${this.ghUser}`)
     },
   },
 }
