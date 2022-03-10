@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .icon-style {
+    @apply text-brightpurple mr-1;
+  }
+}
