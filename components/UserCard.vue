@@ -1,8 +1,8 @@
 <template>
   <section
-    class="flex flex-wrap items-center justify-center md:justify-between gap-4 md:gap-0 mx-10 md:mx-28 my-10 px-6 animate-slide-down text-center md:text-left text-icongrey"
+    class="grid grid-cols-1 md:grid-cols-user-card place-items-center md:justify-between gap-4 md:gap-2 mx-10 my-10 animate-slide-down text-center md:text-left text-icongrey"
   >
-    <div class="w-3/4 md:w-1/4">
+    <div class="w-1/2 md:w-3/4">
       <img
         :src="userInfo.avatar_url"
         :alt="`${userInfo.login} profile picture`"
@@ -15,23 +15,23 @@
         <p>@{{ userInfo.login }}</p>
       </div>
       <div class="flex gap-3 md:gap-6">
-        <p title="Location">
+        <span title="Location">
           <i class="fa-solid fa-location-dot icon-style"></i
           >{{ userInfo.location }}
-        </p>
-        <p title="Company">
+        </span>
+        <span title="Company">
           <i class="fa-solid fa-briefcase icon-style"></i>
           {{ userInfo.company }}
-        </p>
+        </span>
       </div>
       <div class="flex gap-4 justify-center md:justify-start">
-        <p title="Followers">
+        <span title="Followers">
           <i class="fa-solid fa-user icon-style"></i>
           {{ userInfo.followers }}
-        </p>
-        <p title="Following">
+        </span>
+        <span title="Following">
           <i class="fa-solid fa-users icon-style"></i>{{ userInfo.following }}
-        </p>
+        </span>
       </div>
     </div>
     <div class="flex items-center rounded bg-cardblack">

@@ -2,7 +2,7 @@
   <div class="bg-darkgrey flex flex-col items-center">
     <NavBar />
     <UserCard :user-info="userData.user" />
-    <RepoSection :repo-list="userData.repos[0]" />
+    <RepoSection :repo-list="userData.repos" />
   </div>
 </template>
 

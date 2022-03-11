@@ -37,6 +37,10 @@ module.exports = {
           },
         },
       },
+      gridTemplateColumns: {
+        'user-card':
+          'minmax(100px, 170px) minmax(200px, auto) minmax(200px, 250px)',
+      },
     },
   },
   variants: {
