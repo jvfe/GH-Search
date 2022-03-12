@@ -15,11 +15,11 @@
         <p>@{{ userInfo.login }}</p>
       </div>
       <div class="flex gap-3 md:gap-6">
-        <span title="Location">
+        <span v-if="userInfo.location" title="Location">
           <i class="fa-solid fa-location-dot icon-style"></i
           >{{ userInfo.location }}
         </span>
-        <span title="Company">
+        <span v-if="userInfo.company" title="Company">
           <i class="fa-solid fa-briefcase icon-style"></i>
           {{ userInfo.company }}
         </span>

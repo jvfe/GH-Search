@@ -2,14 +2,14 @@
   <div
     class="flex flex-col justify-between gap-4 animate-slide-up bg-cardblack w-80 m-2 p-4 rounded min-h-[200px]"
   >
-    <div class="grid gap-3">
+    <div class="grid gap-3 overflow-hidden text-clip">
       <span class="flex text-lg font-bold">
         <span v-if="repo.fork" class="icon-style" title="Repo is a fork"
           ><i class="fa-solid fa-code-fork ml-1"></i
         ></span>
         <h1>{{ repo.name }}</h1>
       </span>
-      <p class="text-sm text-justify overflow-hidden text-clip">
+      <p class="text-sm text-justify">
         {{ repo.description }}
       </p>
     </div>

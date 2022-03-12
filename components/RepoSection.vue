@@ -1,6 +1,6 @@
 <template>
   <section
-    class="lg:w-7/12 flex flex-wrap flex-grow justify-center mx-10 md:mx-28 my-10 text-icongrey"
+    class="lg:w-7/12 flex flex-wrap flex-grow justify-center mx-2 md:mx-28 my-10 text-icongrey"
   >
     <RepoCard v-for="repo in currentRepoList" :key="repo.id" :repo="repo" />
   </section>
