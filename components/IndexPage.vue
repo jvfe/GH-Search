@@ -4,7 +4,7 @@
       <LogoVertical class="mb-10 animate-slide-down" />
       <form
         class="grid gap-5 animate-slide-up"
-        method="post"
+        method="get"
         @submit.prevent="submitUsername"
       >
         <label for="ghUser" class="text-xs font-medium text-white"
