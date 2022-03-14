@@ -1,5 +1,7 @@
 # GH-Search
 
+[See it live](https://jvfe.github.io/GH-Search/)
+
 Project built from a [DevChallenge](https://www.devchallenge.com.br/challenges/6010b6ad1194ca0021a24f31/details) idea.
 
 Done as a way to learn Nuxt.js and TailwindCSS.
