@@ -34,6 +34,7 @@ export default {
     window.removeEventListener('scroll', this.debouncedGetRepos)
   },
   methods: {
+    // TODO: find out how to test the scroll event
     getNextRepos() {
       const bottomOfWindow =
         document.documentElement.scrollTop + window.innerHeight ===
